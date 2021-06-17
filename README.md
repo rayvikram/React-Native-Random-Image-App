@@ -57,5 +57,9 @@
    - Alert - we can use js alert, or React Native Alert.alert("Title", "message"), etc
    - SafeAreaView - defence against Notch, etc (only on IOS)
    - StyleSheet - we pass an object of styles and it returns object. Benefit: It validates and give error if some JS/CSS is misspelled.
+   - etc - Dimentions, Platform,
 
 9. I started Expo and opened the app in web-browser only. And also downloaded the Expo from Play Store and runnning this app in my mobile.
+10. use react-native-hooks for extra functionality like getting dimentions, etc
+11. We can also use flexbox -flex, flexDirection='column' by default in ReactNative because we generally use mobile in portraid mode, justifyContent, etc. NOTE: (_+_) -> justifyContent (main axis), alignItems (secondary axis)
+12. TODO: do a flex refresher (from the Mosh YT video or anywhere) because we use flex a lot in RN app.

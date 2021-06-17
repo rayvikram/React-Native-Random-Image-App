@@ -7,15 +7,21 @@ import {
   Button,
   Platform,
   Text,
+  Dimensions,
 } from "react-native";
+
+const windowWidth = Dimensions.get("window").width;
+const windowHeight = Dimensions.get("window").height;
+
+const imageWidth = windowWidth * 0.9;
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
   },
   image: {
-    width: 200,
-    height: 300,
+    width: windowWidth * 0.9,
+    height: windowHeight * 0.8,
   },
 });
 
@@ -24,15 +30,15 @@ const handleTouch = () => {
 };
 
 const DisplayAnImage = () => {
-  const [url, seturl] = useState(`https://picsum.photos/200/300`);
+  const [url, seturl] = useState(`https://picsum.photos/400/600`);
 
   const handleButtonPress = () => {
-    seturl(`https://picsum.photos/200/300?random=${Math.random()}}`);
+    seturl(`https://picsum.photos/400/600?random=${Math.random()}}`);
   };
 
   return (
     <View style={styles.container}>
-      <Text>{`You are on ${Platform.OS} platform!`}</Text>
+      {/* <Text>{`You are on ${Platform.OS} platform!`}</Text> */}
       <TouchableHighlight onPress={handleTouch}>
         <Image style={styles.image} source={{ uri: url }} />
       </TouchableHighlight>
