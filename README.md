@@ -1,6 +1,11 @@
+# React Native Random Image Generator
+
+- try it - https://expo.io/@vikramray/ReactNativeRandomImage
+  ![Demo Image](./demo/demo.gif)
+
 # React Native
 
-- Tutorial - Mosh from YT
+- Tutorial - Mosh from YT - https://youtu.be/0-S5a0eXPoc
 
 ## Overview
 
